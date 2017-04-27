@@ -6,6 +6,7 @@
       </div>
       <div class="item">
         <router-link to="/">Home</router-link>
+        <router-link to="/list">List</router-link>
       </div>
     </div>
     <div class="ui container">
