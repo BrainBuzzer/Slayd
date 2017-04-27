@@ -1,6 +1,6 @@
 <template>
   <div class="ui grid">
-    <div :class="{'ui page dimmer inverted transition hidden': !loading, 'ui page dimmer inverted transition active': loading}">
+    <div :class="{'ui page dimmer transition hidden': !loading, 'ui page dimmer transition active': loading}">
       <div class="ui text loader">Processing...</div>
     </div>
     <div class="six wide column">
@@ -284,10 +284,8 @@
       fetchAl() {
         db.get(this.data.id).then((doc) => {
           this.loc_data = doc;
-          console.log(doc);
-        }).catch((err) => {
+        }).catch(() => {
           this.loc_data = null;
-          console.log(err);
         });
       },
     },

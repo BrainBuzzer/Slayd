@@ -1,13 +1,13 @@
 <template>
   <div class="ui grid">
-    <div :class="{'ui page dimmer inverted transition hidden': !loading, 'ui page dimmer inverted transition active': loading}">
+    <div :class="{'ui page dimmer transition hidden': !loading, 'ui page dimmer transition active': loading}">
       <div class="ui text loader">Processing...</div>
     </div>
     <div class="sixteen wide column">
       <div id="heatmap"></div>
     </div>
     <div class="sixteen wide column">
-      <table class="ui inverted celled table" id="tab">
+      <table class="ui celled table" id="tab">
         <thead>
           <tr>
             <th>ID</th>
@@ -63,7 +63,6 @@ export default {
             'Imagery © <a href="http://mapbox.com">Mapbox</a>',
           id: 'mapbox.dark',
         }).addTo(mymap);
-      console.log(heat);
       L.heatLayer(heat).addTo(mymap);
     },
     fetchData() {
