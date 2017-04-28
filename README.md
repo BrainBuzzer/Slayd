@@ -2,6 +2,10 @@
 
 > App for landslides
 
+![](./static/img/Slayd.png)
+
+Slayd is a platform built on top of recent web technologies which aims to give information to the people regarding landslide and contribute to the info on it with a powerful crowd sourcing platform.
+
 ## Build Setup
 
 ``` bash
